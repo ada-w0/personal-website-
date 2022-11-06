@@ -1,0 +1,43 @@
+
+body{
+    background-color:rgb(255, 181, 181);
+}
+h1{
+    color:cadetblue;
+    font-size: 50px;
+}
+h2{
+    color:aquamarine;
+}
+div{
+    color:lightblue;
+    background-color: cadetblue;
+    height: 50px;
+    width: 425px;
+    margin: 50 px;
+}
+img{
+    height: 200px;
+    width: 425px;
+}
+h3{
+    color:darkturquoise;
+}
+h4{
+    color:cornflowerblue;
+}
+p{
+    color:darkslateblue;
+    background-color: aliceblue;
+    width: 50px;
+}   
+.fontclass{
+    font-family: 'Courier New', Courier, monospace;
+}
+.bluefontclass{
+    color:aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2, h3, h4{
+    font-style: italic;
+}

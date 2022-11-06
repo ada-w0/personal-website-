@@ -1,0 +1,43 @@
+ul{
+    overflow:hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+li{
+    float: left;
+}
+li a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: rgb(124, 123, 123);
+    color:#ffffff;
+}
+#image{
+    width: 20%;
+    height: 20%;
+}
+.fish{
+    width: 15%;
+    height: 15%;
+}
+h1, h3, div, button{
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    font-style: italic;
+}
+.dog{
+    width: 15%;
+    height: 15%;
+}
+.div0{
+    background-color: lightgray;
+    width: 150px;
+    border: 5px solid black;
+}

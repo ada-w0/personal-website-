@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="sum"> Sum of Two Numbers</div>
+   
+    <div id = "difference"> Difference of Two Numbers </div>
+   
+    <button>The sum of these two numbers is:</button>
+    <img id = "dog" src="dog.webp">
+   <script>
+        const x = 5;
+        const y = 3;
+        
+        let a = 4;
+        let b = 1;
+
+        let sum = x + y
+        let diff = x - y
+
+        function sumnumbers(x, y){
+            return x + y;
+        }
+        sumnumbers(a, b);
+
+        function subtractnum(x, y){
+            return x - y;
+        }
+        subtractnum(y, a);
+        
+        function multiplynum(x, y){
+            return x * y;
+        }
+        multiplynum(4, y);
+
+        function dividenum(a, b){
+            return x / y;
+        }
+        dividenum(4, 1);
+        function changeimage(){
+            document.getElementById("dog").src = "pan2.jpg";
+        }
+        document.getElementById("sum").innerHTML = sumnumbers(x, y);
+        document.getElementById("eventdemo").addEventListener("click", document.getElementById("changeimage").innerHTML);
+   </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link rel = "stylesheet" href = "nav.css">
+    <style>
+       body{
+        background-color:rgb(187, 187, 187);
+       }
+       .header{
+            background-color: lightblue;
+            grid-area: header;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 50px;
+            border: 20px solid white;
+            height: 100px;
+        }
+        .section1{
+            background-color: #000000;
+
+            background-image: url("reading.jpg");
+
+            grid-area: section1;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .section2{
+            background-color: #000000;
+            
+            background-image: url("math.jpg");
+            
+            grid-area: section2;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .section3{
+            background-color:#000000;
+
+            background-image: url("piano.jpg");
+
+
+            grid-area: section3;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .footer{
+            background-color: #000000;
+
+            background-image: url("class.jpg");
+            
+            grid-area: footer;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .gridcontainer{
+            display:grid;
+            grid-template-areas: 
+            'header header header'
+            'section1 section2 section3'
+            'footer footer footer';
+        }
+        .grid.container > div{
+            padding: 100px;  
+        }
+        div{
+            height: 790px;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href = "personal website.html">Home</a></li>
+        <li><a href = "css.html_1.2FLOAT.html">Basic Info</a></li>
+        <li><a href = "css.html_1.3FLEXBOX.html">Family</a></li>
+        <li><a href = "css.html_1.4GRID.html">Hobbies</a></li>
+        <li><a href = "css.html_1.5NAV.html">Gallery</a></li>
+    </ul>
+    <div class = "gridcontainer">
+        <div class = "header"> 
+           <h1>hobbies</h1> 
+        </div>
+        <div class = "section1"> 
+            1. Reading
+            <p>------------------------------------------------</p>
+            <p>I like reading fantasy, realistic fiction, sci-fi, and historical fiction in my spare time.</p>    
+        </div>
+        <div class = "section2"> 
+            2. Math
+            <p>------------------------------------------------</p>
+            <p>Doing math at school & at home, to me, is relaxing and, in my opinion, the most productive thing to do.</p>
+        </div>
+        <div class = "section3"> 
+            3. Piano 
+            <p>------------------------------------------------</p>
+            <p>I enjoy playing the piano, I have been learning it for about 4-5 years.</p>
+        </div>
+        <div class = "footer"> 
+            4. Classes 
+            <p>------------------------------------------------</p>
+            <p>I have many classes each week, and I really like all of them. A few examples are speech and debate, web design (obviously), python, art, piano, and bridge.</p>
+        </div>
+    </div>
+</body>
+</html>

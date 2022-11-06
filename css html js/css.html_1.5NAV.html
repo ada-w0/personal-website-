@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery </title>
+    <link rel = "stylesheet" href = "nav.css">
+</head>
+<body>
+    <ul>
+        <li><a href = "personal website.html">Home</a></li>
+        <li><a href = "css.html_1.2FLOAT.html">Basic Info</a></li>
+        <li><a href = "css.html_1.3FLEXBOX.html">Family</a></li>
+        <li><a href = "css.html_1.4GRID.html">Hobbies</a></li>
+        <li><a href = "css.html_1.5NAV.html">Gallery</a></li>
+    </ul>
+    <div class = "div0">
+        <h1>Gallery</h1>
+    </div>
+    <div>
+        <h3>pictures of red-eared sliders:</h3>
+    </div>
+    <img id =  "image" src="turtle1.jpg">
+    <br>
+    <button id = "backward">backwards</button>
+    <button id = "forward">forwards</button>
+    <br>
+    <div id = "displayCounter">Counter = 1000</div>
+    <script>
+        var animals = ["turtle1.jpg", "turtle2.jpg", "turtle3.jpg", "turtle4.jpg"];
+        var counter = 1000;
+        const image = document.getElementById("image");
+        function forwardAnimal(){
+            counter++;
+            if(counter % animals.length == 0){
+                image.src = animals[0];
+            }
+            else if (counter % animals.length == 1){
+                image.src = animals[1];
+            }
+            else if (counter % animals.length == 2){
+                image.src = animals[2];
+            }
+            else if (counter % animals.length == 3){
+                image.src = animals[3];
+            }
+        }
+        function backwardAnimal(){
+            counter--;
+            if(counter % animals.length == 0){
+                image.src = animals[0];
+            }
+            else if (counter % animals.length == 1){
+                image.src = animals[1];
+            }
+            else if (counter % animals.length == 2){
+                image.src = animals[2];
+            }
+            else if (counter % animals.length == 3){
+                image.src = animals[3];
+            }
+        }
+
+        function printCounter(){
+            document.getElementById("displayCounter").innerHTML = "Counter = " + counter;
+        }
+
+        document.getElementById("forward").addEventListener("click", forwardAnimal);
+        document.getElementById("forward").addEventListener("click", printCounter);
+        
+        document.getElementById("backward").addEventListener("click", backwardAnimal);
+        document.getElementById("backward").addEventListener("click", printCounter);
+    </script>
+    <h3>pictures of guppies:</h3>
+    <img class = "fish" src="fish1.jpg" alt="guppy">
+    <img class = "fish" src="fish3.jpg" alt="guppy #3">
+    <img class = "fish" src="fish2.jpg" alt="guppy #2">
+    <h3>pictures of golden retrievers:</h3>
+    <img class = "dog" src="gr1.jpg" alt="golden retriever">
+    <img class = "dog" src="gr2.jpg" alt="golden retriever #2"
+</body>
+</html>

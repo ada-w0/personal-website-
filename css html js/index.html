@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link rel = "stylesheet" href = "personal website.css">
+</head>
+<body>
+    <ul>
+        <li><a href = "personal website.html">Home</a></li>
+        <li><a href = "css.html_1.2FLOAT.html">Basic Info</a></li>
+        <li><a href = "css.html_1.3FLEXBOX.html">Family</a></li>
+        <li><a href = "css.html_1.4GRID.html">Hobbies</a></li>
+        <li><a href = "css.html_1.5NAV.html">Gallery</a></li>
+    </ul>
+    <div class = "div0">
+        <h1>My Personal Website: Home</h1>
+    </div>
+    <div class = "div1">
+        <h3>Basic Info</h3>
+        <p>I am 10 years old and in fifth grade. I live in Washington State and go to Endeavour Elementary.</p>
+    </div>
+    <div class = "div2">
+        <h3>Family</h3>
+        <p>I have two brothers and a dog.</p>
+        <img src="pan2.jpg" alt="my dog">
+        <p>- My dog</p>
+
+    </div>
+    <div class = "div3">
+        <h3>Hobbies</h3>
+        <p>I enjoy reading, math, art, swimming, playing the piano, coding, and speech and debate.</p>
+    </div>
+    <br>
+    <div>pictures of my dog:</div>
+    <br>
+    <img id =  "image" src="pan2.jpg">
+    <br>
+    <button id = "backward">backwards</button>
+    <button id = "forward">forwards</button>
+    <div id = "displayCounter">Counter = 1000</div>
+    <script>
+        var animals = ["pan2.jpg", "pan3.jpg", "pan4.jpg", "pan5.jpg"];
+        var counter = 1000;
+        const image = document.getElementById("image");
+        function forwardAnimal(){
+            counter++;
+            if(counter % animals.length == 0){
+                image.src = animals[0];
+            }
+            else if (counter % animals.length == 1){
+                image.src = animals[1];
+            }
+            else if (counter % animals.length == 2){
+                image.src = animals[2];
+            }
+            else if (counter % animals.length == 3){
+                image.src = animals[3];
+            }
+        }
+        function backwardAnimal(){
+            counter--;
+            if(counter % animals.length == 0){
+                image.src = animals[0];
+            }
+            else if (counter % animals.length == 1){
+                image.src = animals[1];
+            }
+            else if (counter % animals.length == 2){
+                image.src = animals[2];
+            }
+            else if (counter % animals.length == 3){
+                image.src = animals[3];
+            }
+        }
+
+        function printCounter(){
+            document.getElementById("displayCounter").innerHTML = "Counter = " + counter;
+        }
+
+        document.getElementById("forward").addEventListener("click", forwardAnimal);
+        document.getElementById("forward").addEventListener("click", printCounter);
+        
+        document.getElementById("backward").addEventListener("click", backwardAnimal);
+        document.getElementById("backward").addEventListener("click", printCounter);
+    </script>
+
+</body>
+</html>
